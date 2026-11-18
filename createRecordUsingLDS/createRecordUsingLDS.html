@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="Create Account Using LDS">
+        <lightning-input label="Account Name" value={accountName} name="accName" onchange={handleChange}></lightning-input>
+        <lightning-input label="Phone" value={phone} name="phone" onchange={handleChange}></lightning-input>
+        <lightning-input label="Industry" value={industry} name="industry" onchange={handleChange}></lightning-input>
+        <lightning-button variant="brand" label="Create Account" title="Create Account" onclick={handleCreateAccount} class="slds-m-top_small"></lightning-button>
+    </lightning-card>
+</template>
