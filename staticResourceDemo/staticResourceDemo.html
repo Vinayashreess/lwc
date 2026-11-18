@@ -1,0 +1,43 @@
+<template>
+    <lightning-card title="Static Resource">
+        <div class="slds-m-around_medium">
+            <h1 class="slds-text-heading_medium slds-text-title_bold">Custom Labels</h1>
+            <p>{label.greeting}</p>
+            <p>{label.salesforceplatform}</p>
+        </div>
+        <div class="slds-m-around_medium">
+            <h1 class="slds-text-heading_medium slds-text-title_bold">Trailhead Logo</h1>
+            <img src={TrailheadLogo} alt="Trailhead Logo">
+        </div>
+        <div class="slds-m-around_medium">
+            <h1 class="slds-text-heading_medium slds-text-title_bold">Content Asset</h1>
+            <img src={ContentAsset} alt="Content Asset">
+        </div>
+        <div class="slds-m-around_medium">
+            <h1 class="slds-text-heading_medium slds-text-title_bold">User Id</h1>
+            <p>User Name : {name}</p>
+        </div>
+        <div class="slds-m-around_medium">
+            <h1 class="slds-text-heading_medium slds-text-title_bold">Check the Permission</h1>
+            <template lwc:if={checkPermission}>
+                <p>You have the permission to view this content.</p>
+            </template>
+            <template lwc:else>
+                <p>You do not have the permission to view this content.</p>
+            </template>
+        </div>
+        <div class="slds-m-around_medium">
+            <h1 class="slds-text-heading_medium slds-text-title_bold ">Third Party CSS</h1>
+            <p class="animate__animated animate__shakeX">{name}</p>
+            
+        </div>
+        <div class="slds-m-around_medium">
+            <h1 class="slds-text-heading_medium slds-text-title_bold">
+                Third Party JS - Moment
+            </h1>
+
+            <p>Date from Moment.js: {date}</p>
+        </div>
+
+    </lightning-card>
+</template>
